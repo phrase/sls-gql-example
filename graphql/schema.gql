@@ -1,0 +1,12 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  hello(msg:String): String!
+}
+
+type Mutation {
+  createUser(name:String!, age:Int!, email:String, tags:[String!]): ID!
+}
